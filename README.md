@@ -1,2 +1,2 @@
 # Js-Libraries
-I had to keep the node_modules folder as I was unsure if the one of the JS libraries I was using (Glide.js) would work without it :( sorry in advance 
+I deleted the node_modules, but the tutorial I watched reccomended that when you reinstall the node_modules to also reinstall Parsley, Glide and Floating UI... just as I'm unsure if it'll work without those :( I've also submitted a ZIP file w/ the node_modules if it doesn't work!
