@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Travel Guide</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/glide.core.min.css">
+    <link rel="stylesheet" href="./assets/css/glide.theme.min.css">
+    
+</head>
+<body>
+
+    <div class="page-wrapper">
+    <header>
+        <figure>
+            <img src="./assets/images/iconn.png" alt="Japan Travel Guide Logo" id="logo">
+
+        </figure>
+        <nav>
+            <a href="#destinations">Plan Your Trip</a>
+            <a href="#food">Experiences</a>
+            <a href="#tips">Events</a>
+            <a href="#contact">Guides</a>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." id="search-bar">
+                <button type="submit" id="search-button">Search</button>
+            </div>
+        </nav>
+    </header>
+    <section id="hero">
+        <h1>Come See The Cherry Blossoms</h1>
+        <p>Forecasts call for cherry blossoms early spring, don't miss them!</p>
+    </section>
+    </div>
+     <main>
+        <section id="destinations">
+            <div class="bloc-logo">
+                <canvas id="logo-canvas"></canvas>
+                <div class="logo-mask"></div>
+            </div>                      
+            <p>We offer a variety of exotic and enjoyable locations!</p>
+            <div>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide"><img src="./assets/images/fukuoka.jpg"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Fukuoka
+                              </button>
+                              <div id="tooltip" role="tooltip">Fukuoka is home to Japan’s first ramen food stalls (yatai), <br>where you can enjoy the famous Hakata ramen in a lively street-side setting! 🍜
+                                <div id="arrow"></div>
+                            </li>
+                        <li class="glide__slide"><img src="./assets/images/hiroshima.avif"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Hiroshima
+                              </button>
+                              <div id="tooltip" role="tooltip">Hiroshima is home to Japan’s first-ever Mazda factory, <br>which started producing cars in 1931 and still operates today! 🚗
+                                <div id="arrow"></div>
+                            </li>
+                        <li class="glide__slide"><img src="./assets/images/kyoto.jpg"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Kyoto
+                              </button>
+                              <div id="tooltip" role="tooltip">Kyoto has over 2,000 temples and shrines, including the famous <br>Fushimi Inari Shrine with its thousands of vermillion torii gates! ⛩️
+                                <div id="arrow"></div>
+                            </li>
+                        <li class="glide__slide"><img src="./assets/images/osaka.jpg"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Osaka
+                              </button>
+                              <div id="tooltip" role="tooltip">Osaka is known as "Japan’s Kitchen" because of its amazing street food, <br>including takoyaki (octopus balls) and okonomiyaki (savory pancakes)! 🍜🎌
+                                <div id="arrow"></div>
+                            </li>
+                        <li class="glide__slide"><img src="./assets/images/sapporo.webp"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Sapporo
+                              </button>
+                              <div id="tooltip" role="tooltip">Sapporo is famous for its Sapporo Snow Festival, where massive and intricate <br>ice sculptures transform the city into a winter wonderland! ❄️⛄
+                                <div id="arrow"></div>
+                            </li>
+                        <li class="glide__slide"><img src="./assets/images/tokyo.webp"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Tokyo
+                              </button>
+                              <div id="tooltip" role="tooltip">Tokyo is home to the busiest pedestrian crossing in the world, Shibuya Crossing, <br>where up to 3,000 people cross at once during peak hours! 🚶‍♂️🚦🏙️
+                                <div id="arrow"></div>
+                            </li>
+                        <li class="glide__slide"><img src="./assets/images/yokohama.jpg"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Yokohama
+                              </button>
+                              <div id="tooltip" role="tooltip">Yokohama is home to Japan’s largest Chinatown, with over 600 restaurants <br>and shops, offering some of the best Chinese cuisine in the country! 🏮🥟🎏
+                                <div id="arrow"></div>
+                            </li>
+                      </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <section id="food">
+            <div class="bloc-logo1">
+                <canvas id="logo-canvas1"></canvas>
+                <div class="logo-mask1"></div>
+            </div>  
+            <p>Experience all the authentic food we offer!</p>
+            <div>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide"><img src="./assets/images/ramen.webp"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Ramen
+                              </button>
+                              <div id="tooltip" role="tooltip">A flavorful noodle soup with various broths like shoyu (soy sauce), <br>
+                                miso, and tonkotsu (pork bone). 🍜
+                                <div id="arrow"></div>
+                            </li>
+                        <li class="glide__slide"><img src="./assets/images/sushi.webp"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Sushi
+                              </button>
+                              <div id="tooltip" role="tooltip">Vinegared rice topped with fresh seafood, often served with <br>wasabi and soy sauce.🍣
+                                <div id="arrow"></div>
+                            </li>
+                        <li class="glide__slide"><img src="./assets/images/okonomiyaki.webp"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Okonomiyaki
+                              </button>
+                              <div id="tooltip" role="tooltip">A savory Japanese pancake filled with cabbage, meat, <br>and topped with a sweet-savory sauce. 🥞🔥
+                                <div id="arrow"></div>
+                            </li>
+                        <li class="glide__slide"><img src="./assets/images/takoyaki.png"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Takoyaki
+                              </button>
+                              <div id="tooltip" role="tooltip">Ball-shaped snacks made of batter and filled with diced octopus, <br>topped with mayo and bonito flakes. 🐙
+                                <div id="arrow"></div>
+                            </li>
+                        <li class="glide__slide"><img src="./assets/images/katsu curry.jpg"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Katsu Curry
+                              </button>
+                              <div id="tooltip" role="tooltip">A crispy breaded pork cutlet served over rice with rich Japanese curry.🍛
+                                <div id="arrow"></div>
+                            </li>
+                      </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        
+        <section id="tips">
+            <div class="bloc-logo2">
+                <canvas id="logo-canvas2"></canvas>
+                <div class="logo-mask2"></div>
+            </div>  
+            <p>Learn about transportation, etiquette, and budgeting.</p>
+            <div>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide"><img src="./assets/images/rail pass.jpg"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Buy A Rail Pass
+                              </button>
+                              <div id="tooltip" role="tooltip">If you plan to travel between cities, the JR Pass is a cost-effective way to ride the <br>Shinkansen (bullet train), which connects major destinations across Japan.
+                                <div id="arrow"></div>
+                            </li>
+                        <li class="glide__slide"><img src="./assets/images/money.jpg"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Always Carry Cash
+                              </button>
+                              <div id="tooltip" role="tooltip">While credit cards are accepted in many places, smaller shops, restaurants, <br>and rural areas often prefer cash, so it's good to carry some yen.
+                                <div id="arrow"></div>
+                            </li>
+                        <li class="glide__slide"><img src="./assets/images/manners.webp"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Have Good Manners
+                              </button>
+                              <div id="tooltip" role="tooltip">Bowing is a common greeting, shoes should be removed before entering homes and <br>certain restaurants, and speaking quietly on public transport is expected.
+                                <div id="arrow"></div>
+                            </li>
+                        <li class="glide__slide"><img src="./assets/images/store.jpg"  alt="">
+                            <button id="button" aria-describedby="tooltip">
+                                Convenience Stores Are Key
+                              </button>
+                              <div id="tooltip" role="tooltip">Japanese konbini (like 7-Eleven, Lawson, and FamilyMart) <br>offer delicious food, ATMs, and travel essentials, making them a must-visit for travelers.
+                                <div id="arrow"></div>
+                            </li>
+                      </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>FOLLOW US</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="./assets/images/facebook.webp" alt="Facebook"></a>
+                    <a href="#"><img src="./assets/images/insta.webp" alt="Instagram"></a>
+                    <a href="#"><img src="./assets/images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="./assets/images/youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+    
+            <div class="footer-section">
+                <h3>INFORMATION</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Travel Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>SEND US YOUR QUESTIONS!</h3>
+                <form class="demo-form">
+                    <!-- Step 1: Name -->
+                    <div class="form-section">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" class="form-control" name="firstname" required="">
+                
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" class="form-control" name="lastname" required="">
+                    </div>
+                
+                    <!-- Step 2: Email -->
+                    <div class="form-section">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" name="email" required="">
+                    </div>
+                
+                    <!-- Step 3: Question -->
+                    <div class="form-section">
+                        <label for="question">Your Question:</label>
+                        <input type="text" class="form-control" name="question" required="">
+                    </div>
+                
+                    <!-- Navigation Buttons -->
+                    <div class="form-navigation">
+                        <button type="button" class="form-btn-prev">← Previous</button>
+                        <button type="button" class="form-btn-next">Next →</button>
+                        <input type="submit" class="form-btn-submit" value="Submit">
+                    </div>
+                </form>
+                
+                <p>&copy; 2025 Japan Travel Guide | Contact us at travel@japan.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  
+</body>
+</html>

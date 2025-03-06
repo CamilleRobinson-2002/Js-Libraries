@@ -1,0 +1,559 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(252, 249, 248);
+    color: black;
+    margin: 0;
+}
+
+.page-wrapper {
+    background-image: url("../images/cherry\ blossom\ header.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
+}
+
+
+header{
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px;
+
+}
+
+#logo{
+    height: 70px;
+    width: 70px;
+    
+}
+
+
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    max-width: 1000px; 
+
+}
+
+nav a {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 
+        -2px -2px 0 rgba(0, 0, 0, 0.185),  
+         2px -2px 0 rgba(0, 0, 0, 0.185),
+        -2px  2px 0 rgba(0, 0, 0, 0.185),
+         2px  2px 0 rgba(0, 0, 0, 0.185);
+}
+
+nav a:hover{
+    color:#e78b8b;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px; 
+}
+
+#search-button {
+    padding: 6px 12px;
+    background-color: #e78b8b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #a04545; 
+}
+
+/* Hero Section */
+#hero {
+    color: white;
+    text-shadow: 
+    -2px -2px 0 rgba(0, 0, 0, 0.185),  
+     2px -2px 0 rgba(0, 0, 0, 0.185),
+    -2px  2px 0 rgba(0, 0, 0, 0.185),
+     2px  2px 0 rgba(0, 0, 0, 0.185);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+
+    padding-top: 100px;
+
+
+}
+
+#hero h1 {
+    font-size: 58px;
+    margin-bottom: 10px; 
+}
+
+#hero p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px; 
+}
+
+
+/* Floating Object */
+
+#tooltip {
+    display: none;
+    width: max-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e78b8b;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 90%;
+}
+
+#button {
+    font-size: 25px;
+    background-color: rgb(252, 249, 248);
+    font-weight: bolder;
+    border: none;
+    padding-top: 10px;
+}
+
+  #arrow {
+    position: absolute;
+    background:  #e78b8b;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+  }
+
+  /* Destinations */
+
+  #destinations {
+        height: 650px;
+        text-align: center;
+        padding-top: 30px;
+  }
+
+  #destinations p {
+    padding-top: 30px;
+  }
+
+  #food {
+    height: 650px;
+    text-align: center;
+    padding-top: 55px;
+  }
+
+  #food p {
+    padding-top: 30px;
+  }
+
+  #tips {
+    height: 650px;
+    text-align: center;
+    padding-top: 55px;
+  }
+
+  #tips p {
+    padding-top: 30px;
+  }
+
+  /* Footer Section */
+  footer {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section h3 {
+    color: #fd8eb3; /* Vibrant pink */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Style the list */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style the links */
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000000; 
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Add hover effect */
+.footer-section ul li a:hover {
+    color: #d81b60; /* Darker pink */
+    transform: scale(1.05);
+    text-shadow: 1px 1px 5px rgba(255, 105, 180, 0.5);
+}
+
+
+.social-icons a img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+/* Form Styling */
+.form-section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.form-section.current {
+    display: block;
+    opacity: 1;
+}
+
+/* Form Container */
+form {
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Input Fields */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.form-btn-next, .form-btn-prev, .form-btn-submit {
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-btn-next {
+    background-color: #e78b8b;
+    color: white;
+}
+
+.form-btn-next:hover {
+    background-color: #a04545;
+}
+
+.form-btn-prev {
+    background-color: #6c757d;
+    color: white;
+}
+
+.form-btn-prev:hover {
+    background-color: #5a6268;
+}
+
+.form-btn-submit {
+    background-color: #e78b8b;
+    color: white;
+    display: none;
+    width: 250px;
+}
+
+.form-btn-submit:hover {
+    background-color: #a04545;
+}
+
+/* Align buttons */
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Granim */
+.bloc-logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 70px;
+}
+
+.bloc-logo canvas {
+    position: absolute;
+    top: -12.5%; 
+    left: -12.5%; 
+    width: 125%; 
+    height: 125%; 
+    
+    -webkit-mask-image: url(../images/destinations.png);
+    mask-image: url(../images/destinations.png);
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+
+    z-index: 2; /* Ensure it's above the image */
+    
+}
+
+.bloc-logo .logo-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: url(../images/cuisine.png) no-repeat center;
+    background-size: contain;
+
+    z-index: 1; /* Keep the original image as backup */
+    display: none;
+}
+
+/* Cuisine */
+
+.bloc-logo1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 70px;
+}
+
+.bloc-logo1 canvas {
+    position: absolute;
+    top: -12.5%; 
+    left: -12.5%; 
+    width: 125%; 
+    height: 125%; 
+    
+    -webkit-mask-image: url(../images/cuisine.png);
+    mask-image: url(../images/cuisine.png);
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+
+    z-index: 2; /* Ensure it's above the image */
+    
+}
+
+.bloc-logo1 .logo-mask1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: url(../images/Travel\ Tips.png) no-repeat center;
+    background-size: contain;
+
+    z-index: 1; /* Keep the original image as backup */
+    display: none;
+}
+
+/* Cuisine */
+
+.bloc-logo2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 70px;
+}
+
+.bloc-logo2 canvas {
+    position: absolute;
+    top: -12.5%; 
+    left: -12.5%; 
+    width: 125%; 
+    height: 125%; 
+    
+    -webkit-mask-image: url(../images/Travel\ Tips.png);
+    mask-image: url(../images/Travel\ Tips.png);
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: center;
+    mask-position: center;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+
+    z-index: 2; /* Ensure it's above the image */
+    
+}
+
+.bloc-logo2 .logo-mask2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: url(../images/Travel\ Tips.png) no-repeat center;
+    background-size: contain;
+
+    z-index: 1; /* Keep the original image as backup */
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .page-wrapper {
+        height: 50vh; 
+        background-position: center;
+        background-size: cover;
+    }
+
+    header {
+        flex-direction: row;
+        height: auto;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    #logo {
+        height: 50px; 
+        width: 50px;
+    }
+
+    nav {
+        flex-direction: column; 
+        align-items: center;
+        display: none;
+    }
+
+    nav a {
+        font-size: 18px; 
+    }
+
+    #search-bar {
+        width: 120px; 
+    }
+
+    #hero {
+        padding-top: 50px;
+    }
+
+    #hero h1 {
+        font-size: 40px; 
+    }
+
+    #hero p {
+        font-size: 18px; 
+    }
+
+
+    #tooltip {
+        font-size: 80%;
+        padding: 3px;
+    }
+
+
+    #destinations, #food, #tips {
+        height: auto;
+        padding-top: 20px;
+    }
+
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section ul li a {
+        font-size: 16px;
+    }
+
+
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+
+    .bloc-logo, .bloc-logo1, .bloc-logo2 {
+        width: 200px;
+        height: 50px;
+    }
+
+    .bloc-logo canvas, 
+    .bloc-logo1 canvas, 
+    .bloc-logo2 canvas {
+        top: -10%;
+        left: -10%;
+        width: 120%;
+        height: 120%;
+    }
+}
+
+
+
+
+
+

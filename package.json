@@ -1,0 +1,22 @@
+{
+  "name": "a3",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": "Camille  Robinson",
+  "private": true,
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "main": "index.js",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@floating-ui/dom": "^1.6.13",
+    "@glidejs/glide": "^3.7.1",
+    "granim": "^2.0.0",
+    "lightbox2": "^2.11.5",
+    "parsleyjs": "^2.9.2"
+  }
+}
